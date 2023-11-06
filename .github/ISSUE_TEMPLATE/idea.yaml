@@ -1,4 +1,4 @@
-name: 🚀 Digitalization Idea
+name: Digitalization Idea
 description: "Submit a digitalization idea"
 #title: "[Idea] "
 labels: [Submitted]
@@ -7,38 +7,57 @@ body:
     id: no-duplicate-issues
     attributes:
       label: "⚠️ Please verify that this feature request has NOT been suggested before."
-      description: "Search in the issues sections by clicking [HERE](https://github.com/louislam/uptime-kuma/issues?q=)"
+      description: "Search in the issues sections by clicking [HERE](https://github.com/aheidsieck/testideas/issues?q=)"
       options:
         - label: "I checked and didn't find similar feature request"
           required: true
   - type: dropdown
-    id: feature-area
+    id: category
     attributes:
-      label: "🏷️ Feature Request Type"
-      description: "What kind of feature request is this?"
+      label: "Idea Category"
+      description: "What kind of an idea is this?"
       multiple: true
       options:
-        - API
-        - New Notification
-        - New Monitor
-        - UI Feature
+        - Digitalization of an analog process
+        - Optimization of a process
+        - Update of a digital system
         - Other
     validations:
       required: true
+- type: dropdown
+    id: category
+    attributes:
+      label: "Area of TUM"
+      description: "What area of TUM is affected?"
+      multiple: true
+      options:
+        - Education
+        - Research
+        - Student Administration
+    validations:
+      required: true
+  - type: textarea
+    id: contact-person
+    validations:
+      required: true
+    attributes:
+      label: "Who do we turn to for questions?"
+      description: "...."
+      placeholder: "...."
   - type: textarea
     id: feature-description
     validations:
       required: true
     attributes:
-      label: "🔖 Feature description"
+      label: "Feature description"
       description: "A clear and concise description of what the feature request is."
       placeholder: "You should add ..."
   - type: textarea
-    id: solution
+    id: current-status
     validations:
       required: true
     attributes:
-      label: "✔️ Solution"
+      label: "Current Status"
       description: "A clear and concise description of what you want to happen."
       placeholder: "In my use-case, ..."
   - type: textarea
@@ -49,11 +68,3 @@ body:
       label: "❓ Alternatives"
       description: "A clear and concise description of any alternative solutions or features you've considered."
       placeholder: "I have considered ..."
-  - type: textarea
-    id: additional-context
-    validations:
-      required: false
-    attributes:
-      label: "📝 Additional Context"
-      description: "Add any other context or screenshots about the feature request here."
-      placeholder: "..."
