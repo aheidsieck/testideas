@@ -1,12 +1,11 @@
 name: Digitalization Idea
 description: "Submit a digitalization idea"
-#title: "[Idea] "
 labels: [Submitted]
 body:
   - type: checkboxes
     id: no-duplicate-issues
     attributes:
-      label: "⚠️ Please verify that this feature request has NOT been suggested before."
+      label: "Please verify that this feature request has NOT been suggested before."
       description: "Search in the issues sections by clicking [HERE](https://github.com/aheidsieck/testideas/issues?q=)"
       options:
         - label: "I checked and didn't find similar feature request"
@@ -16,7 +15,6 @@ body:
     attributes:
       label: "Idea Category"
       description: "What kind of an idea is this?"
-      multiple: true
       options:
         - Digitalization of an analog process
         - Optimization of a process
