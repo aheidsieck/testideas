@@ -1,7 +1,7 @@
 name: 🚀 Digitalization Idea
-description: "Submit a proposal for a new feature"
-#title: "[Feature] "
-labels: [feature-request]
+description: "Submit a digitalization idea"
+#title: "[Idea] "
+labels: [Submitted]
 body:
   - type: checkboxes
     id: no-duplicate-issues
