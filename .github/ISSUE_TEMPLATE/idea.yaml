@@ -23,7 +23,7 @@ body:
     validations:
       required: true
 - type: dropdown
-    id: category
+    id: area
     attributes:
       label: "Area of TUM"
       description: "What area of TUM is affected?"
