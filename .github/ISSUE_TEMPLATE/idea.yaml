@@ -22,7 +22,7 @@ body:
         - Other
     validations:
       required: true
-- type: dropdown
+  - type: dropdown
     id: area
     attributes:
       label: "Area of TUM"
