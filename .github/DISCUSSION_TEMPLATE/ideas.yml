@@ -1,5 +1,4 @@
-name: Digitalization Idea
-description: "Submit a digitalization idea"
+title: Digitalization Idea
 labels: [Submitted]
 body:
   - type: checkboxes
