@@ -1,0 +1,68 @@
+name: Digitalization Idea
+description: "Submit a digitalization idea"
+labels: [Submitted]
+body:
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "Please verify that this feature request has NOT been suggested before."
+      description: "Search in the issues sections by clicking [HERE](https://github.com/aheidsieck/testideas/issues?q=)"
+      options:
+        - label: "I checked and didn't find similar feature request"
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Idea Category"
+      description: "What kind of an idea is this?"
+      options:
+        - Digitalization of an analog process
+        - Optimization of a process
+        - Update of a digital system
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area of TUM"
+      description: "What area of TUM is affected?"
+      multiple: true
+      options:
+        - Education
+        - Research
+        - Student Administration
+    validations:
+      required: true
+  - type: textarea
+    id: contact-person
+    validations:
+      required: true
+    attributes:
+      label: "Who do we turn to for questions?"
+      description: "...."
+      placeholder: "...."
+  - type: textarea
+    id: feature-description
+    validations:
+      required: true
+    attributes:
+      label: "Feature description"
+      description: "A clear and concise description of what the feature request is."
+      placeholder: "You should add ..."
+  - type: textarea
+    id: current-status
+    validations:
+      required: true
+    attributes:
+      label: "Current Status"
+      description: "A clear and concise description of what you want to happen."
+      placeholder: "In my use-case, ..."
+  - type: textarea
+    id: alternatives
+    validations:
+      required: false
+    attributes:
+      label: "❓ Alternatives"
+      description: "A clear and concise description of any alternative solutions or features you've considered."
+      placeholder: "I have considered ..."
